@@ -1,0 +1,34 @@
+/* media queries */
+
+/* global */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* header */
+header {
+  position: sticky;
+}
+/* navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submenu {
+  display: none;
+}
+nav div:hover > .submenu {
+  display: block;
+}
+
+/* menu burger */
+.menu-burger {
+  display: none;
+}
+
+.menu-burger:hover * {
+  display: block;
+}
