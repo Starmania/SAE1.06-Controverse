@@ -13,15 +13,19 @@ header {
 }
 /* navbar */
 nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
 
 .submenu {
+  position: absolute;
   display: none;
+  flex-direction: column;
+  top: 15px; /* adjust as needed */
 }
 nav div:hover > .submenu {
-  display: block;
+  display: flex;
 }
 
 /* menu burger */
