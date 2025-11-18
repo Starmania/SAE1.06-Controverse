@@ -31,6 +31,13 @@ jobs:
         steps:
             - name: Checkout
               uses: actions/checkout@v4
+            - name: Add <base> tag to all HTML files
+              run: |
+                  find . -name "*.html" -type f -print0 | while IFS= read -r -d '' file; do
+                    perl -0777 -pi \
+                        -e 's|(<head\b[^>]*>)|$1\n<base href="https://starmania.github.io/SAE1.06-Controverse/">|i' \
+                        "$file"
+                  done
             - name: Setup Pages
               uses: actions/configure-pages@v5
             - name: Upload artifact
