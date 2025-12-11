@@ -7,7 +7,17 @@
   --accent: #76a2d0;
 }
 
-/* media queries */
+.primary {
+  color: var(--primary);
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.secondary {
+  color: var(--secondary);
+}
 
 /* global */
 
@@ -45,3 +55,6 @@ nav div:hover > .submenu {
 .menu-burger:hover * {
   display: block;
 }
+
+
+/* media queries */
