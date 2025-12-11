@@ -13,9 +13,7 @@
   margin: 0 1em;
 }
 
-.hero h2 {
-  font-family: 'Golos Text', sans-serif;
-  font-size: 5em;
+.hero h1 {
   text-transform: uppercase;
 }
 
