@@ -1,3 +1,17 @@
+/*media queries*/
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .submenu {
+    position: static;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 /* root*/
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
@@ -98,12 +112,5 @@ nav div:hover > .submenu {
 }
 
 /* menu burger */
-.menu-burger {
-  display: none;
-}
-
-.menu-burger:hover * {
-  display: block;
-}
 
 /* media queries */
