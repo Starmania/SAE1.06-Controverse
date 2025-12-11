@@ -1,3 +1,12 @@
-: root {
-    --couleur-logo : #ff5000;
+:root {
+  --couleur-logo: #ff5000;
+}
+
+.paragraphe {
+  display: flex;
+  
+}
+
+h3 {
+  color: var(--couleur-logo);
 }
