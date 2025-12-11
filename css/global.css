@@ -7,7 +7,53 @@
   --primary: #de8a63;
   --secondary: #8dd8c3;
   --accent: #76a2d0;
-  font-family: 'Rubik', sans-serif;
+  --font-scale: 1.333;
+  --p: 1rem;
+  --h5: calc(var(--p) * var(--font-scale));
+  --h4: calc(var(--h5) * var(--font-scale));
+  --h3: calc(var(--h4) * var(--font-scale));
+  --h2: calc(var(--h3) * var(--font-scale));
+  --h1: calc(var(--h2) * var(--font-scale));
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+p {
+  font-size: var(--p);
+  line-height: 1.5;
+  color: var(--text);
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 700;
 }
 
 .primary {
@@ -30,7 +76,7 @@ a {
 }
 
 /* header */
-header {
+body > header {
   position: sticky;
 }
 /* navbar */
@@ -46,6 +92,7 @@ nav {
   flex-direction: column;
   top: 15px; /* adjust as needed */
 }
+
 nav div:hover > .submenu {
   display: flex;
 }

@@ -29,19 +29,47 @@
             <!--submenu-position-->
             <div>
               <!-- sub-menu -->
-              <a href="/page1.html">Page1</a>
-              <a href="/page2.html">Page2</a>
-              <a href="/page3.html">Page3</a>
+              <a href="page1.html">Page1</a>
+              <a href="page2.html">Page2</a>
+              <a href="page3.html">Page3</a>
             </div>
           </div>
         </div>
         <div class="nav-item">
-          <a href="/contact.html">Contact</a>
+          <a href="contact.html">Contact</a>
         </div>
       </nav>
     </header>
     <main>
-      
+      <h1>Contactez-nous</h1>
+      <form action="#" method="post">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required />
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required />
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required />
+        <label for="code postal">Code Postal :</label>
+        <input type="text" id="code postal" name="code postal" required />
+        <label for="pays">Pays :</label>
+        <input type="text" id="pays" name="pays" required />
+        <!-- ligne qui réponds à "vous avez entendu parler de nous via ?-->
+        <label for="source">Vous avez entendu parler de nous via :</label>
+        <select id="source" name="source" required>
+          <option value="reseaux sociaux">Réseaux sociaux</option>
+          <option value="amis">Amis</option>
+          <option value="publicité">Publicité</option>
+          <option value="autre site web">Autre site web</option>
+          <option value="autre">Autre</option>
+        </select>
+        <label for="date"
+          >date à laquelle vous souhaitez être recontacté :</label
+        >
+        <input type="date" id="date" name="date" required />
+        <label for="message">Votre message :</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
     </main>
   </body>
 </html>
