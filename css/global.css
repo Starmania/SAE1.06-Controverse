@@ -1,13 +1,25 @@
 /* root*/
-:root{
---text: #1f120a;
---background: #fcf9f8;
---primary: #de8a63;
---secondary: #8dd8c3;
---accent: #76a2d0;
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --text: #1f120a;
+  --background: #fcf9f8;
+  --primary: #de8a63;
+  --secondary: #8dd8c3;
+  --accent: #76a2d0;
 }
 
-/* media queries */
+.primary {
+  color: var(--primary);
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.secondary {
+  color: var(--secondary);
+}
 
 /* global */
 
@@ -45,3 +57,5 @@ nav div:hover > .submenu {
 .menu-burger:hover * {
   display: block;
 }
+
+/* media queries */
