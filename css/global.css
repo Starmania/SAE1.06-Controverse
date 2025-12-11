@@ -1,5 +1,6 @@
 /* root*/
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("./nav.css");
 
 :root {
   --text: #1f120a;
@@ -68,6 +69,12 @@ h5 {
   color: var(--secondary);
 }
 
+body {
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+}
+
 /* global */
 
 a {
@@ -75,35 +82,14 @@ a {
   color: inherit;
 }
 
+body > main {
+  padding: 6em;
+}
+
 /* header */
 body > header {
   position: sticky;
 }
-/* navbar */
-nav {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-}
 
-.submenu {
-  position: absolute;
-  display: none;
-  flex-direction: column;
-  top: 15px; /* adjust as needed */
-}
-
-nav div:hover > .submenu {
-  display: flex;
-}
-
-/* menu burger */
-.menu-burger {
-  display: none;
-}
-
-.menu-burger:hover * {
-  display: block;
-}
 
 /* media queries */

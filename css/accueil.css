@@ -20,3 +20,10 @@
 .hero p {
   font-family: 'Inter', sans-serif;
 }
+
+.hero-image {
+  /* For debugging purpose, let's extent to the max height */
+  background-color: brown;
+  height: 25vw;
+
+}
