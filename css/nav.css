@@ -3,6 +3,7 @@ nav {
   position: relative;
   display: flex;
   justify-content: space-between;
+  flex-grow: 1;
 }
 
 .submenu {
@@ -25,12 +26,18 @@ nav div:hover > .submenu {
 
 /*media queries*/
 @media (max-width: 768px) {
+  header {
+    flex-direction: row-reverse;
+  }
   #burger-img {
     display: block;
+    /* order: 5; */
   }
   nav {
     flex-direction: column;
     align-items: flex-start;
+    /* order: -2; */
+    flex-grow: 0;
   }
   .nav-item {
     display: none;
@@ -47,5 +54,11 @@ nav div:hover > .submenu {
   .submenu > div {
     display: block;
     flex-direction: column;
+  }
+
+  header > h5 {
+    /* order: -1; */
+    flex-grow: 1;
+    text-align: center;
   }
 }
