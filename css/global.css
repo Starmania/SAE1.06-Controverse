@@ -1,10 +1,10 @@
 /* root*/
-:root{
---text: #1f120a;
---background: #fcf9f8;
---primary: #de8a63;
---secondary: #8dd8c3;
---accent: #76a2d0;
+:root {
+  --text: #1f120a;
+  --background: #fcf9f8;
+  --primary: #de8a63;
+  --secondary: #8dd8c3;
+  --accent: #76a2d0;
 }
 
 /* media queries */
