@@ -25,6 +25,10 @@ nav div:hover > .submenu {
 
 /*media queries*/
 @media (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
   #burger-img {
     display: block;
   }
@@ -40,7 +44,7 @@ nav div:hover > .submenu {
     display: flex;
   }
 
-  nav:has(#burger-img:hover)    .nav-item {
+  nav:has(#burger-img:hover) .nav-item {
     display: block;
   }
 
