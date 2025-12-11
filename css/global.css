@@ -69,11 +69,21 @@ h5 {
   color: var(--secondary);
 }
 
+body {
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+}
+
 /* global */
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+body > main {
+  padding: 6em;
 }
 
 /* header */
