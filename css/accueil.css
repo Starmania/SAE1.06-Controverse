@@ -1,0 +1,23 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  background-color: var(--background-light);
+  border-radius: 1em;
+  box-shadow: var(--shadow);
+}
+
+.hero > div {
+  flex: 1;
+  margin: 0 1em;
+}
+
+.hero h2 {
+  font-family: 'Golos Text', sans-serif;
+  font-size: 5em;
+}
+
+.hero p {
+  font-family: 'Inter', sans-serif;
+}
