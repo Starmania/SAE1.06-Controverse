@@ -1,12 +1,17 @@
 :root {
   --couleur-logo: #ff5000;
+  --couleur-titre: #888888;
 }
 
 .paragraphe {
   display: flex;
-  
 }
 
 h3 {
   color: var(--couleur-logo);
+}
+
+h4 {
+  font-size: 20px;
+  color: var(--couleur-titre);
 }
