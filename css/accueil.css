@@ -16,6 +16,7 @@
 .hero h2 {
   font-family: 'Golos Text', sans-serif;
   font-size: 5em;
+  text-transform: uppercase;
 }
 
 .hero p {
