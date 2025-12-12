@@ -19,8 +19,8 @@ nav div:hover > .submenu {
 
 #burger-img {
   display: none;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
 }
 
@@ -47,7 +47,7 @@ nav div:hover > .submenu {
     display: flex;
   }
 
-  nav:has(#burger-img:hover) .nav-item {
+  nav:hover .nav-item {
     display: block;
   }
 
@@ -61,4 +61,11 @@ nav div:hover > .submenu {
     flex-grow: 1;
     text-align: center;
   }
+  nav > div {
+    position: absolute;
+    top: 50px;
+    background: white;
+  }
+
+
 }
