@@ -1,0 +1,18 @@
+main {
+    background-color: yellow;
+}
+
+article div {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    padding: 5vw;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 10px red;
+    margin-top: 5%;
+}
+
+article div img {
+    width: auto;
+    max-width: 95%;
+}
