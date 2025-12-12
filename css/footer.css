@@ -16,7 +16,10 @@ footer p {
   height: 40px;
   margin-right: 10px;
 }
-
+#footer-logo {
+  width: 60px;
+  height: 60px;
+}
 @media (max-width: 768px) {
   footer #footer-logo {
     display: none;
