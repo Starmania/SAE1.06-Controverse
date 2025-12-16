@@ -1,6 +1,7 @@
 /* root*/
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("./nav.css");
+@import url("./footer.css");
 
 :root {
   --text: #1f120a;
@@ -92,6 +93,17 @@ body > header {
   top: 0;
   display: flex;
   justify-content: space-between;
+  background-color: var(--background);
 }
 
 /* media queries */
+
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  body > main {
+    padding: 2em;
+  }
+}
