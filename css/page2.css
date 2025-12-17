@@ -2,7 +2,7 @@ main {
     background-color: yellow;
 }
 
-article div {
+article > div {
     background-color: blue;
     display: flex;
     flex-direction: column;
@@ -10,9 +10,28 @@ article div {
     border-radius: 15px;
     box-shadow: 10px 10px 10px 10px red;
     margin-top: 5%;
+    font-size: 200%;
+}
+
+article > div.imgRight {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1vw;
+}
+
+article div div {
+    flex-direction: column;
+    max-width: 50%;
+    width: auto;
 }
 
 article div img {
     width: auto;
-    max-width: 95%;
+    max-width: 40%;
+    border-radius: 15px;
 }
+
+.imgRight img {
+    margin-left: auto;
+}
+
