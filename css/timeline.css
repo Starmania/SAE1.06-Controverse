@@ -1,0 +1,92 @@
+main {
+  background-color: var(--background);
+  padding: 20px;
+}
+
+div:not(.imgRight) p {
+  font-size: 150%;
+  color: var(--text);
+}
+
+img {
+  border-radius: 15px;
+}
+
+/* --- CONFIGURATION DU CARROUSEL --- */
+.carousel-container {
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  overflow-x: auto; /* Active le scroll horizontal */
+  scroll-snap-type: x mandatory; /* Force l'aimantation sur chaque carte */
+  scroll-behavior: smooth;
+  gap: 30px;
+  padding: 20px 0;
+  -webkit-overflow-scrolling: touch; /* Pour un scroll fluide sur mobile */
+}
+
+.carousel-track::-webkit-scrollbar {
+  height: 8px;
+}
+.carousel-track::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+/* Style des cartes dans le carrousel */
+.carousel-track > div {
+  flex: 0 0 70%; /* Chaque carte prend 70% de la largeur du parent */
+  scroll-snap-align: center; /* Aligne la carte au milieu quand on défile */
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  padding: 3vw;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px var(--primary);
+}
+
+/* --- ADAPTATION DES IMAGES DANS LE CARROUSEL --- */
+.carousel-track div:not(.imgRight) img {
+  width: auto;
+  max-width: max-content;
+  max-height: 30vh;
+  border-radius: 15px;
+  margin-top: auto;
+  justify-content: center;
+}
+
+/* Cas particulier pour imgRight dans le carrousel */
+.carousel-track > div.imgRight {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 2vw;
+  justify-content: space-around;
+}
+
+.carousel-track .imgRight div {
+  max-width: 60%;
+}
+
+.carousel-track .imgRight img {
+  max-height: 100vh;
+}
+
+/* --- STYLE DU DEUXIÈME ARTICLE --- */
+article:not(.carousel-container) > div {
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  padding: 5vw;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px 10px var(--primary);
+  margin-top: 5%;
+}
+
+article:not(.carousel-container) img {
+  width: auto;
+  max-width: 40%;
+  border-radius: 15px;
+}

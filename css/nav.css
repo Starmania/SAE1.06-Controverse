@@ -34,7 +34,7 @@ nav div:hover > .submenu {
 }
 
 /*media queries*/
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   header {
     flex-direction: row-reverse;
   }

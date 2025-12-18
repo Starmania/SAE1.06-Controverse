@@ -3,6 +3,10 @@
 @import url("./nav.css");
 @import url("./footer.css");
 
+/**
+ * Phone width breakpoint: 768px
+ * Tablet width breakpoint: 992px
+ */
 :root {
   --text: #1f120a;
   --background: #fcf9f8;
@@ -94,10 +98,11 @@ body > header {
   display: flex;
   justify-content: space-between;
   background-color: var(--background);
+  border-bottom: var(--accent) solid 2px;
+  z-index: 1;
 }
 
 /* media queries */
-
 
 @media (max-width: 768px) {
   body {
