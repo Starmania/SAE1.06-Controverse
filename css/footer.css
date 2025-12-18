@@ -17,8 +17,9 @@ footer p {
   margin-right: 10px;
 }
 #footer-logo {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
+  margin: auto 0px auto 10px;
 }
 @media (max-width: 768px) {
   footer #footer-logo {
