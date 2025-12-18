@@ -1,3 +1,5 @@
+/* Tu as beaucoup de css à réorganiser, good luck ! */
+
 /* navbar */
 nav {
   position: relative;
@@ -6,18 +8,49 @@ nav {
 nav > div {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
 }
 
 .submenu {
   position: absolute;
   display: none;
+}
+
+.submenu > div {
+  display: flex;
+  border-radius: 5px;
   flex-direction: column;
   top: 15px; /* adjust as needed */
 }
 
+.submenu a {
+  background-color: var(--accent);
+  padding: 10px;
+}
+
+.submenu a:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
 nav div:hover > .submenu {
-  display: flex;
+  display: block;
+}
+
+.nav-item {
+  background-color: var(--accent);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.nav-item:has(.submenu)::after {
+  content: "v";
+  font-weight: bold;
+  display: inline-block;
+  transition: transform 400ms;
+}
+
+.nav-item:hover:has(.submenu)::after {
+  transform: rotate(-180deg);
 }
 
 #burger-img {
@@ -37,6 +70,7 @@ header > h5 {
   color: var(--accent);
   font-size: 24px;
 }
+
 /*media queries*/
 @media (max-width: 768px) {
   header {
