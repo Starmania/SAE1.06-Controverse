@@ -51,6 +51,9 @@ nav div:hover > .submenu {
   /* display: block; */
   margin : 0px 0px 0px 10px;
 }
+.nav-item:hover:has(.submenu)  {
+  border-radius: 5px 5px 5px 0px;
+}
 .nav-item:has(.submenu)::after {
   content: "v";
   font-weight: bold;
