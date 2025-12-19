@@ -15,6 +15,7 @@ nav > div {
 .submenu {
   position: absolute;
   display: none;
+  top : 35px;
 }
 
 .submenu > div {
@@ -38,11 +39,17 @@ nav div:hover > .submenu {
 }
 
 .nav-item {
+  position: relative;
   background-color: var(--accent);
-  padding: 10px;
+  padding: 10px 10px 10px 0px; ;
   border-radius: 5px;
 }
 
+
+.nav-item >a {
+  /* display: block; */
+  margin : 0px 0px 0px 10px;
+}
 .nav-item:has(.submenu)::after {
   content: "v";
   font-weight: bold;
@@ -74,6 +81,9 @@ header > h5 {
 }
 
 .actuel-page {
+  background-color: var(--primary);
+}
+.actuel-page .submenu a {
   background-color: var(--primary);
 }
 
