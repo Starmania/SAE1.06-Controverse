@@ -72,7 +72,7 @@ header > h5 {
 }
 
 .actuel-page {
-  color : var(--primary);
+  background-color: var(--primary);
 }
 
 
