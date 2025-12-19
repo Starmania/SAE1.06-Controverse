@@ -1,5 +1,9 @@
 # SAE-1.06
 
+lien vers le site web : https://webinfo.iutmontp.univ-montp2.fr/~mariona/index.html
+lien vers le git lab : https://gitlabinfo.iutmontp.univ-montp2.fr/sae-1.06-2025/sae-1.06-prog
+
+
 Participation des membres :
 
 Environ 25 % par eleves nous avons decide pour cette SAE de nous repartir les tache de façon a peu pres equivalentes.
