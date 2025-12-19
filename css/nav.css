@@ -15,8 +15,7 @@ nav > div {
 .submenu {
   position: absolute;
   display: none;
-  top : 35px;
-  padding-top : 10px;
+  top : 38px;
 }
 
 .submenu > div {
@@ -115,6 +114,7 @@ header > h5 {
     position: relative;
     display: flex;
     top : 0;
+    padding-top : 10px;
   }
 
   nav:hover .nav-item {
