@@ -23,7 +23,7 @@
   /* max-width: 20em; */ /* à discuter */
   margin: 0 auto; /* center horizontally */
 
-  background: url("img/CameraMan.png") no-repeat top center;
+  background: url("./img/CameraMan.png") no-repeat top center;
   background-size: cover;
 }
 
