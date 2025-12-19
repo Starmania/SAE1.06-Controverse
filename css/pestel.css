@@ -7,6 +7,11 @@
   display: flex;
 }
 
+article > div a {
+  text-decoration: underline;
+  color: var(--primary);
+}
+
 h3 {
   color: var(--couleur-logo);
 }
@@ -24,7 +29,7 @@ article {
 }
 h4 {
   font-size: 20px;
-  color: var(--couleur-titre);
+  color: var(--primary);
 }
 
 .logostrava {
