@@ -12,14 +12,6 @@ article > div a {
   color: var(--primary);
 }
 
-div:not(.imgRight) p {
-  font-size: 150%;
-}
-
-li {
-  font-size: 125%;
-}
-
 img {
   border-radius: 15px;
 }
@@ -104,20 +96,6 @@ article:not(.carousel-container) img {
 }
 
 @media (max-width: 768px) {
-  h1 {
-    font-size: 125%;
-  }
-  h2 {
-    font-size: 115%;
-  }
-
-  div:not(.imgRight) p {
-    font-size: 90%;
-  }
-
-  li {
-    font-size: 85%;
-  }
 
   .carousel-track > div {
     max-width: 90%;
