@@ -51,7 +51,7 @@ img {
 .carousel-track > div {
   flex: 0 0 70%; /* Chaque carte prend 70% de la largeur du parent */
   scroll-snap-align: center; /* Aligne la carte au milieu quand on défile */
-  background-color: var(--secondary);
+  background-color: var(--accent);
   display: flex;
   flex-direction: column;
   padding: 3vw;
@@ -88,7 +88,7 @@ img {
 
 /* --- STYLE DU DEUXIÈME ARTICLE --- */
 article:not(.carousel-container) > div {
-  background-color: var(--secondary);
+  background-color: var(--accent);
   display: flex;
   flex-direction: column;
   padding: 5vw;
