@@ -44,3 +44,9 @@ h4 {
 .logostrava {
   width: 100px;
 }
+
+@media (max-width : 758px){
+  #grandII{
+    display: none;
+  }
+}
