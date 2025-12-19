@@ -11,6 +11,15 @@ article > div a {
   text-decoration: underline;
   color: var(--primary);
 }
+main > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logostrava {
+  scale: 3;
+  margin:auto;
+}
 
 h3 {
   color: var(--couleur-logo);
