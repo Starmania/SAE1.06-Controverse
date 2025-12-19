@@ -9,11 +9,13 @@ nav > div {
   position: relative;
   display: flex;
   gap: 20px;
+  margin-top: 15px;
 }
 
 .submenu {
   position: absolute;
   display: none;
+  top : 35px;
 }
 
 .submenu > div {
@@ -37,11 +39,17 @@ nav div:hover > .submenu {
 }
 
 .nav-item {
+  position: relative;
   background-color: var(--accent);
-  padding: 10px;
+  padding: 10px 10px 10px 0px; ;
   border-radius: 5px;
 }
 
+
+.nav-item >a {
+  /* display: block; */
+  margin : 0px 0px 0px 10px;
+}
 .nav-item:has(.submenu)::after {
   content: "v";
   font-weight: bold;
@@ -64,6 +72,7 @@ nav div:hover > .submenu {
   width: 50px;
   height: 50px;
   margin-right: 10px;
+  margin : 10px;
 }
 header > h5 {
   margin: auto 30px;
@@ -72,7 +81,10 @@ header > h5 {
 }
 
 .actuel-page {
-  color : var(--primary);
+  background-color: var(--primary);
+}
+.actuel-page .submenu a {
+  background-color: var(--primary);
 }
 
 
@@ -97,6 +109,7 @@ header > h5 {
   .submenu {
     position: relative;
     display: flex;
+    top : 0;
   }
 
   nav:hover .nav-item {
