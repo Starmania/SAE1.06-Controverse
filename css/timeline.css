@@ -3,6 +3,10 @@ main {
   padding: 20px;
 }
 
+h1,h2 {
+  color: var(--primary);
+}
+
 article > div a {
   text-decoration: underline;
   color: var(--primary);
