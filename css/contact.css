@@ -1,14 +1,18 @@
 fieldset {
   margin: auto;
-  max-width: 80%;
+  max-width: 600px;
   background-color: aqua;
   border-radius: 15px;
   border:5px solid blue;
   display: flex;
   flex-direction: column;
   font-size: 25px;
-
+  align-items: flex-end;
   gap : 10px;
+}
+
+h1{
+  text-align: center;
 }
 
 input, select, textarea, button{
@@ -25,4 +29,26 @@ textarea {
 
 button {
   width: 100px;
+}
+
+
+@media (max-width: 768px){
+  fieldset{
+    align-items: flex-start;
+  }
+  input, select, button{
+    max-width: 200px;
+  }
+  textarea {
+    height: 120px;
+    max-width: 500px;
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 520px){
+    fieldset>div{
+      display: flex;
+      flex-direction: column;
+    }
 }
